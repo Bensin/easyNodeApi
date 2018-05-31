@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 require('./app/routes/note.routes.js')(app);
+require('./app/routes/employe.routes')(app);
 
 app.listen('3000',()=>{
    console.log('server listening port 3000');
